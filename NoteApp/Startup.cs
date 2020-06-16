@@ -43,6 +43,8 @@ namespace NoteApp
 
             services.AddSession();
 
+            services.AddScoped<INoteRepository, NoteRepository>();
+
             services.AddControllersWithViews();
         }
 
