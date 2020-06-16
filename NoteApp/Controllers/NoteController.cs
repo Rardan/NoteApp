@@ -55,7 +55,7 @@ namespace NoteApp.Controllers
                 await _noteRepository.AddNoteAsync(note);
                 await _noteRepository.SaveChangesAsync();
 
-               // return RedirectToAction("ShowNotes");
+                return RedirectToAction("ShowNotes");
             }
 
             return View();
